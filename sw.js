@@ -1,4 +1,4 @@
-const cacheNames = [
+const cacheFiles = [
     '/',
     '/index.html',
     '/restaurant.html',
@@ -22,7 +22,7 @@ const cacheNames = [
 self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open('v1').then(function(cache) {
-            return cache.addAll(cacheNames);
+            return cache.addAll(cacheFiles);
         })
     );
 });
