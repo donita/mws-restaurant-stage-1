@@ -137,8 +137,8 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: wrap;
+	justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -148,8 +148,7 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  max-width: 430px;
-	width: 70%
+  width: 270px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -276,4 +275,32 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .inside #maincontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inside #map-container {
+    height: 300px;
+    position: relative;
+    width: 100%;
+  }
+  #restaurant-container, #reviews-container {
+    width: 100%;
+  }
+  #breadcrumb {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .leaflet-control-zoom.leaflet-bar.leaflet-control {
+    margin-top: 4rem;
+  }
+  .inside #footer {
+    width: 100%;
+    padding: 20px 0;
+  }
 }
