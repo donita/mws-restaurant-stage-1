@@ -1,4 +1,6 @@
 # Restaurant Review Web App
+<a href="http://tinypic.com?ref=16m7tpj" target="_blank"><img src="http://i67.tinypic.com/16m7tpj.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
 I converted a static webpage to a mobile-ready web application
 
 # How to Use
